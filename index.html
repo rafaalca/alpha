@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Curso Profesional de Git</title>
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="nav-wrapper grey darken-3">
+				<a href="#!" class="brand-logo ">Página ejemplo del curso de Git</a>
+				<a href="#" data-activates="mobile-demo" class="button-collapse" style="margin-left: .5em;"><i class="material-icons">menu</i></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="#inicio"><i class="material-icons left red-text">home</i> Inicio</a></li>
+					<li><a href="#acerca"><i class="material-icons left green-text">assignment_ind</i> Acerca</a></li>
+					<li><a href="#contacto"><i class="material-icons left blue-text">email</i> Contacto</a></li>
+				</ul>
+				<ul class="side-nav" id="mobile-demo">
+					<li><a href="#inicio"><i class="material-icons left red-text">home</i> Inicio</a></li>
+					<li><a href="#acerca"><i class="material-icons left green-text">assignment_ind</i> Acerca</a></li>
+					<li><a href="#contacto"><i class="material-icons left blue-text">email</i> Contacto</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<section id="inicio">
+		<div class="fullscreen"> <!-- Slider -->
+			<div class="slider ">
+				<ul class="slides">
+					<li>
+						<img src="https://i.imgur.com/MrZU7Ll.png"> <!-- random image -->
+					</li>
+					<li>
+						<img src="https://i.imgur.com/6biqO6H.png"> <!-- random image -->
+						<div class="caption left-align">
+							<h3>Left Aligned Caption</h3>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div> <!-- Fin de Slider -->
+	</section>
+	<div class="container espacio"> <!--cuadro Perfil -->
+		<div class="row">
+			<code></code>
+			<section id="acerca">
+				<div class="col s12 m4">
+					<div class="card-panel z-depth-2">
+						<div class="col s4 m6 l4">
+							<img src="img/perfil.jpg" alt="foto de perfil" class="responsive-img circle">
+						</div>
+
+						<span >
+							<h4>Rafael Álvarez</h4>
+						</span>
+						<p>Tutor del curso profesional de Git en Código Facilito</p>
+					</div>
+				</div> <!-- Fin cuadro Perfil -->
+								
+					<script src="js/jquery.js"></script>
+					<script src="js/materialize.min.js"></script>
+					<script>
+						$(document).ready(function(){
+							$(".button-collapse").sideNav();
+							$('.slider').slider({full_width: true});
+							$('.parallax').parallax();
+							$('.modal-trigger').leanModal();
+						});
+					</script>
+				</body>
+				</html>
